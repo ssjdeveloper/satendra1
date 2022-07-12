@@ -479,7 +479,7 @@ input[type=number]{
     margin-bottom: 1rem;
 }
 
-@keyframes frame1{
+/* @keyframes frame1{
     50%{
         width: 100%;
         left: 0;
@@ -521,4 +521,4 @@ input[type=number]{
         width: auto;
         height: 100%;
     }
-}
+} */
