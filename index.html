@@ -1,149 +1,340 @@
 <!DOCTYPE html>
-<html lang="en">        
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Resume</title>
+<html lang="en" oncontextmenu="return false">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nehemiah's Global India Exports & Imports</title>
+    <link rel="icon" type="image/x-icon" href="./img and video/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop()) {
+                $("nav").addClass("hiding");
+            } else {
+                $("nav").removeClass("hiding");
+
+            }
+        }
         
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        )
+    </script>
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
-    </head>
-    <body>
-        <main class="main-content">
-      <section class="left-section">
-        <div class="left-content">
-          <div class="profile-details">
-            <div class="profile">
-              <img class="profile-image" src="me.jpg.jpeg" alt="" />
-            </div>
-            <h2 class="name">Satendra</h2>
-            <h4 class="designation">Web Developer</h4>
-            <hr />
-            <p class="description">
-              App Developer || Full Stack Developer 
-            </p>
-          </div>
-          <div class="contact-info">
-            <div class="contact-item">
-              <div class="social-media">
-                <li class="icon">
-                  <a href="https://github.com/SSJdeveloper">GitHub</a>
-                </li>
-                <li class="icon">
-                  <a
-                    href="https://www.linkedin.com/feed/"
-                    >LinkeDin</a
-                  >
-                </li>
-                <li class="icon">
-                  <a href="https://www.instagram.com/"
-                    >InstaGram</a
-                  >
-                </li>
-                <li class="icon">
-                  <a href="https://twitter.com/home">Twitter</a>
-                </li>
-              </div>
-            </div>
-          </div>
-          <div class="skills">
-            <h2 class="skills-title">Skills</h2>
-            <div class="skills-content">
-              <div class="skill-item">
-                <div class="skill-name">
-                  <h3>HTML</h3>
-                </div>
-                <div class="skill-progress">
-                  <div class="progress-bar" style="width: 90%"></div>
-                </div>
-              </div>
+</head>
 
-              <div class="skill-item">
-                <div class="skill-name">
-                  <h3>CSS</h3>
+<body>
+    <div class="changing">
+        <header>
+            <nav>
+                <img src="./img and video/logo.png" class="logo">
+                <div class="menu">
+                    <ul>
+                        <li><a href="#start">HOME</a></li>
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#contacts">CONTACT</a></li>
+                        
+                    </ul>
                 </div>
-                <div class="skill-progress">
-                  <div class="progress-bar" style="width: 90%"></div>
+                <div class="links1">
+                    ALSO IN &nbsp;
+                    <div class="forG">
+                    <a href="https://www.facebook.com/profile.php?id=100012742128295" target="_blank"><svg class="mini" width="20" height="26" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.02293 16L3 9H0V6H3V4C3 1.3008 4.67151 0 7.07938 0C8.23277 0 9.22406 0.08587 9.51294 0.12425V2.94507L7.84296 2.94583C6.53343 2.94583 6.27987 3.5681 6.27987 4.48124V6H10L9 9H6.27986V16H3.02293Z"
+                            fill="#0A083B"></path>
+                    </svg></a>
                 </div>
-              </div>
+                <div class="forG">
+                    <a href="https://twitter.com/home?lang=en-in" target="_blank">
+                    <svg class="mini" width="26" height="24" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16 2C15.4 2.3 14.8 2.4 14.1 2.5C14.8 2.1 15.3 1.5 15.5 0.7C14.9 1.1 14.2 1.3 13.4 1.5C12.8 0.9 11.9 0.5 11 0.5C9.3 0.5 7.8 2 7.8 3.8C7.8 4.1 7.8 4.3 7.9 4.5C5.2 4.4 2.7 3.1 1.1 1.1C0.8 1.6 0.7 2.1 0.7 2.8C0.7 3.9 1.3 4.9 2.2 5.5C1.7 5.5 1.2 5.3 0.7 5.1C0.7 6.7 1.8 8 3.3 8.3C3 8.4 2.7 8.4 2.4 8.4C2.2 8.4 2 8.4 1.8 8.3C2.2 9.6 3.4 10.6 4.9 10.6C3.8 11.5 2.4 12 0.8 12C0.5 12 0.3 12 0 12C1.5 12.9 3.2 13.5 5 13.5C11 13.5 14.3 8.5 14.3 4.2C14.3 4.1 14.3 3.9 14.3 3.8C15 3.3 15.6 2.7 16 2Z"
+                            fill="#0A083B"></path>
+                    </svg>
+                </a>
+                </div>
+                <div class="forG">
+                <a href="https://www.youtube.com/channel/UCeFk85cnx9qA3zgQcfxPGrg" target="_blank">
+                    <svg class="mini" width="26" height="22" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.8 2.8C15.6 1.5 15 0.6 13.6 0.4C11.4 8.9407e-08 8 0 8 0C8 0 4.6 8.9407e-08 2.4 0.4C1 0.6 0.3 1.5 0.2 2.8C0 4.1 0 6 0 6C0 6 0 7.9 0.2 9.2C0.4 10.5 1 11.4 2.4 11.6C4.6 12 8 12 8 12C8 12 11.4 12 13.6 11.6C15 11.3 15.6 10.5 15.8 9.2C16 7.9 16 6 16 6C16 6 16 4.1 15.8 2.8ZM6 9V3L11 6L6 9Z"
+                            fill="#0A083B"></path>
+                    </svg>
+                </a>
+                </div>
+                <div class="forG">
+                <a href="https://www.linkedin.com/feed//" target="_blank">
+                    <svg class="mini" width="26" height="22" viewBox="0 0 44 40" xmlns="http://www.w3.org/2000/svg"><path d="M44 40h-9.725V25.938c0-3.68-1.52-6.193-4.866-6.193-2.558 0-3.981 1.696-4.643 3.33-.249.586-.21 1.403-.21 2.22V40h-9.634s.124-24.909 0-27.173h9.634v4.265c.57-1.865 3.648-4.526 8.56-4.526C39.211 12.566 44 16.474 44 24.89V40zM5.18 9.428h-.063C2.013 9.428 0 7.351 0 4.718 0 2.034 2.072 0 5.239 0c3.164 0 5.11 2.029 5.171 4.71 0 2.633-2.007 4.718-5.23 4.718zm-4.07 3.399h8.576V40H1.11V12.827z" fill="#0A083B" ></path></svg>
+                </a>   
+            </div>       
+            </nav>
+        </header>
+    </div>
 
-              <div class="skill-item">
-                <div class="skill-name">
-                  <h3>JAVA</h3>
-                </div>
-                <div class="skill-progress">
-                  <div class="progress-bar" style="width: 90%"></div>
-                </div>
-              </div>
-
-              <div class="skill-item">
-                <div class="skill-name">
-                  <h3>DSA</h3>
-                </div>
-                <div class="skill-progress">
-                  <div class="progress-bar" style="width: 90%"></div>
-                </div>
-              </div>
-
-              <div class="skill-item">
-                <div class="skill-name">
-                  <h3>Java Script</h3>
-                </div>
-                <div class="skill-progress">
-                  <div class="progress-bar" style="width: 90%"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div id="start">
+        <video autoplay loop muted plays-inline class="video1">
+            <source src="./img and video/background video.webm" type="video/mp4">
+        </video>
+        <div class="content">
+            <h1 class="naming">Welcome to Satendra &nbsp;<span class="span1"></span></h1>
+            <br />
+            <h1 class="naming1">Global India SSJ developer<span class="span1"></span></h1>
+            <h2 class="naming2">Well Planned development company Globally &nbsp;<span class="span1"></span></h2>
+            <br />
+            <a href="#contacts" class="button1">GET IN TOUCH</a>
         </div>
-      </section>
-      <section class="right-section">
-        <div class="right-main-content">
-          <section class="about sect">
-            <h2 class="right-title">About Me</h2>
-            <p class="para">
-              I am skills developed from <b>Newton School</b> as a full stack web developer. <br>
-              I am very exited coding practice. <br>
-              I am good listener. <br>
-              positive thinking
-            </p>
-          </section>
+    </div>
+    <div id="about">
 
-          <section class="education sect">
-            <h2 class="right-title">Education</h2>
-            <p class="para">
-              I am persuing B. Tech Mechanical Engineering from Shri ram group of college engineering and manegment banmor. <br>
-              I am extra Studing BA Private from Shri ram college Jotai road porsa. <br>
-              I am 10th class completed from govt. high School jonha. <br>
-              I am 12th class completed from govt. haigher secondry school goth ambah. <br>
-              I am currently skill develop from Newton School as a full stack web developer.
-            </p>
-          </section>
-
-          <section class="experience sect">
-            <h2 class="right-title">Experience</h2>
-            <p class="para">
-             I am freser.
-            </p>
-          </section>
-
-          <section class="about sect">
-            <h2 class="right-title">Projects</h2>
-            <a class="para">
-             I am compleated Newton School project. <br>
-             <a href="https://ssjdeveloper.github.io/tic-tac-toe-game/" target="_blank">Tic Tac Toe Game</a> <br>
-             <a href="https://charming-gaufre-ca1b69.netlify.app/" target="_blank">Food ordering Website</a>
-            </p>
-          </section>
+        <h1>About Us</h1>
+        <div class="image">
+            <img src="./img and video/developer.jpg
+            " height="360" width="470">
         </div>
-      </section>
-    </main>
-    </body>
-</html> 
+        <p>satendra is full stack web</p>
+        <p>
+            With a combined experience of over a hundred years, we bring to you technical, legal, financial and
+            logistics
+            expertise helping our customers in realizing their TOTAL EXIM SOLUTIONS in all aspects of the trade.
+            We have been growing fundamentally in an organic manner over the years starting with a turnover of Rs.
+            20,000
+            to now having Offices in 7 cities within a short span of 15 years.
+        </p>
+        <p id>
+            Starting with our own offices at Chennai as Head Office, we have added extended our own office network to
+            Aurangabad Nasik,
+            Mumbai & Vapi across Western India and Agency agreement offices on PAN India basis to ensure smooth handling
+            of our customer’s
+            business. We always strive to ensure best industry standards & practices are applied while handling any
+            scope of work in relation
+            to EXIM Trade in India & abroad.
+        </p>
+    </div>
+    <section id="services" class="arena">
+        <div class="servicing">
+            <div class="sContent">
+                <div class="mainTitle">
+                    <h4 class="sTitle">Our Services</h1>
+                        <p class="serText">
+                            I am Service Provided in Website Developemnt, Android App Developemnt, Game Developemnt and Full Stack Developemnt. <br>Happiness guaranteed!
+                        </p>
+                </div>
+            </div>
+        </div>
+                    <div id="services1">
+                            
+                            <div class="commonEach1">
+                                <span class="material-symbols-outlined">
+                                    bolt
+                                </span>
+                            </div>
+                            <div class="expContent">
+                                <h4 class="expTitle"><strong>Experience</strong></h4>
+                                <p class="expText">Our experince yeilds perfection<br> in what we do</p>
+                            </div>
+                            
+                       
+                        <div class="commonEach1">
+                            <span class="material-symbols-outlined">
+                                format_paint
+                            </span>
+                        </div>
+                        <div class="expContent">
+                            <h4 class="expTitle"><strong>Well Planned</strong></h4>
+                            <p class="expText">Perfectly planned<br> better design and gauranteed delivery</p>
+                        </div>
+                          
+                    </div>
+                    <div class="services2">
+                        <div class="commonEach1">
+                            <span class="material-symbols-outlined">
+                                emoji_objects
+                            </span>
+                        </div>
+                        <div class="expContent">
+                            <h4 class="expTitle"><strong>Good Hands</strong></h4>
+                            <p class="expText">Team of capable people<br> at your service.</p>
+                        </div>
+                            <div>
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                            </div>
+                        <div class="commonEach1">
+                            <span class="material-symbols-outlined" id="kd">
+                                monitoring
+                            </span>
+                        </div>
+                        <div class="expContent">
+                            <h4 class="expTitle"><strong>Automated Business</strong></h4>
+                            <p class="expText">Manual issues leads lot of errors<br> We automate our process to
+                                speed up your deliveries</p>
+                        </div>
+                    </div>
+    </section>
+    <div id="contacts" class="touch">
+        <h1 class="headingTouch">Get in Touch</h1>
+        <p class="touchDes">We will help you plan Developemnt
+
+        </p>
+        <div class="cards">
+            <div class="a1id">
+                <div class="phoneic">
+                    <span class="material-symbols-outlined">
+                        call
+                    </span>
+                </div>
+                <div>
+                    <h2>Phone</h2>
+                    <p>+91 8269114770</p>
+                </div>
+            </div>
+
+            <div class="a2id">
+                <div class="addressic">
+                    <span class="material-symbols-outlined">
+                        pin_drop
+                    </span>
+                </div>
+                <div>
+                    <h2>Address</h2>
+                    <p>SATENDRA GLOBAL INDIA</p>
+                    <p>Amabah</p>
+                    <p>Morena</p>
+                    <p>476111</p>
+                    <p>Madhya Pradesh</p>
+                    <p>India</p>
+                </div>
+            </div>
+            <div class="a3id">
+                <div class="emailic">
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+                </div>
+                <div>
+                    <h2>Email</h2>
+                    <p>satendrainghjamhoriya2002@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dataCollection">
+        <form action="#.html">
+            <div class="make">
+                <div class="entries">
+                    <label for="nameC">Name <span>*</span></label>
+                </div>
+                <div class="entries2">
+                    <input type="text" id="nameC" maxlength="50" placeholder="Enter your Name" required>
+                </div>
+            </div>
+
+            <div class="make">
+                <div class="entries">
+                    <label for="mailing">Email <span>*</span></label>
+                </div>
+                <div class="entries2">
+                    <input type="email" id="mailing" pattern="[a-z0-9.-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="50" minlength="5" placeholder="Enter your email" required>
+
+                </div>
+            </div>
+
+            <div class="make">
+                <div class="entries">
+                    <label for="numbering">Phone <span>*</span></label>
+                </div>
+                <div class="entries2">
+                    <input type="number" minlength="10" id="numbering" maxlength="20" placeholder="+918888888888" required>
+                </div>
+            </div>
+
+            <div class="make">
+                <div class="entries">
+                    <label for="gist">Subject <span>*</span></label>
+                </div>
+                <div class="entries2">
+                    <input type="text" id="gist" maxlength="50" placeholder="Business Enquiry" required>
+
+                </div>
+            </div>
+
+            <div class="make">
+                <div class="entries">
+                    <label for="draft">Your Message <span>*</span></label>
+                </div>
+                <div class="entries2">
+                    <textarea type="text" id="draft" name="draft" class="entries1"
+                        placeholder="Glad to know about your EXIM Services!, I wanna place some Business deal with your Offices" maxlength="500"
+                        required></textarea>
+                </div>
+            </div>
+            <button id="sending">Send Message</button>
+        </form>
+    </div>
+    <footer class="lastFooter">
+        <div class="lastFooter1">
+            <div class="begin">
+                <div class="begin1sub">
+                    <div class="brand">
+                        <img src="./img and video/logo.png" alt="brand">
+                    </div>
+                </div>
+                <div class="begin2sub">
+                    <p>Satendra Global India</p>
+                    <p>Specialised Logistics Supervisors</p>
+                    <p>One stop solution for end to end Logistics</p>
+                    <p>(A unit of <span>Satendra Project Inc.</span>)</p>
+                </div>
+                <div class="begin4sub">
+                    <h3>Branches</h3>
+                    <ul>
+                        <li>Ambah</li>
+                        <li>Morena</li>
+                        <li>Delhi</li>
+                    </ul>
+                </div>
+                <div class="begin3sub">
+                    <p><strong>We are also in </strong></p>
+                    <br/>
+                    <div class="links">
+                        <a href="https://www.facebook.com/profile.php?id=100012742128295" target="_blank"><svg class="mini" width="20" height="26" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.02293 16L3 9H0V6H3V4C3 1.3008 4.67151 0 7.07938 0C8.23277 0 9.22406 0.08587 9.51294 0.12425V2.94507L7.84296 2.94583C6.53343 2.94583 6.27987 3.5681 6.27987 4.48124V6H10L9 9H6.27986V16H3.02293Z"
+                                fill="#0A083B"></path>
+                        </svg></a>
+                        <a href="https://twitter.com/home?lang=en-in" target="_blank">
+                        <svg class="mini" width="26" height="24" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 2C15.4 2.3 14.8 2.4 14.1 2.5C14.8 2.1 15.3 1.5 15.5 0.7C14.9 1.1 14.2 1.3 13.4 1.5C12.8 0.9 11.9 0.5 11 0.5C9.3 0.5 7.8 2 7.8 3.8C7.8 4.1 7.8 4.3 7.9 4.5C5.2 4.4 2.7 3.1 1.1 1.1C0.8 1.6 0.7 2.1 0.7 2.8C0.7 3.9 1.3 4.9 2.2 5.5C1.7 5.5 1.2 5.3 0.7 5.1C0.7 6.7 1.8 8 3.3 8.3C3 8.4 2.7 8.4 2.4 8.4C2.2 8.4 2 8.4 1.8 8.3C2.2 9.6 3.4 10.6 4.9 10.6C3.8 11.5 2.4 12 0.8 12C0.5 12 0.3 12 0 12C1.5 12.9 3.2 13.5 5 13.5C11 13.5 14.3 8.5 14.3 4.2C14.3 4.1 14.3 3.9 14.3 3.8C15 3.3 15.6 2.7 16 2Z"
+                                fill="#0A083B"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCeFk85cnx9qA3zgQcfxPGrg" target="_blank">
+                        <svg class="mini" width="26" height="22" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.8 2.8C15.6 1.5 15 0.6 13.6 0.4C11.4 8.9407e-08 8 0 8 0C8 0 4.6 8.9407e-08 2.4 0.4C1 0.6 0.3 1.5 0.2 2.8C0 4.1 0 6 0 6C0 6 0 7.9 0.2 9.2C0.4 10.5 1 11.4 2.4 11.6C4.6 12 8 12 8 12C8 12 11.4 12 13.6 11.6C15 11.3 15.6 10.5 15.8 9.2C16 7.9 16 6 16 6C16 6 16 4.1 15.8 2.8ZM6 9V3L11 6L6 9Z"
+                                fill="#0A083B"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/feed/" target="_blank">
+                        <svg class="mini" width="26" height="22" viewBox="0 0 44 40" xmlns="http://www.w3.org/2000/svg"><path d="M44 40h-9.725V25.938c0-3.68-1.52-6.193-4.866-6.193-2.558 0-3.981 1.696-4.643 3.33-.249.586-.21 1.403-.21 2.22V40h-9.634s.124-24.909 0-27.173h9.634v4.265c.57-1.865 3.648-4.526 8.56-4.526C39.211 12.566 44 16.474 44 24.89V40zM5.18 9.428h-.063C2.013 9.428 0 7.351 0 4.718 0 2.034 2.072 0 5.239 0c3.164 0 5.11 2.029 5.171 4.71 0 2.633-2.007 4.718-5.23 4.718zm-4.07 3.399h8.576V40H1.11V12.827z" fill="#0A083B" ></path></svg>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="rights">
+                All rights reserved. || © 2022 Satendra Project Inc.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
